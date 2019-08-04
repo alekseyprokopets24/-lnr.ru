@@ -1,0 +1,734 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v4.0'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/ru_RU/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Your customer chat code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="776303769451031"
+		logged_in_greeting="Здравствуйте! Чем мы можем вам помочь?"
+		logged_out_greeting="Здравствуйте! Чем мы можем вам помочь?">
+	</div>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+		ym(54685342, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true,
+			trackHash: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/54685342" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144982091-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-144982091-1');
+	</script>
+
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="author" content="rbkt.ru">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style_qw.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div class="overlay"></div>
+	<div class="modal-window">
+		<button class="btn-close-modal" id="btn-close-modal"></button>
+		<h4 class="modal-windows__title">ЗАКАЗ ЗВОНКА</h4>
+		<form action="" class="form" method="POST" id="form" name="form">
+
+
+			<label for="input-name">Ваше имя*</label>
+			<input type="text" class="input-name form-field" id="input-name" name="name" required pattern="[A-Za-zА-Яа-яЁё]{3,}">
+			<label for="phone">Ваш номер телефона*</label>
+			<input name="phone" type="text" class="input-name form-field" id="tel" required pattern="^\+7\d{3}\d{7}$" value="+7">
+
+			<button class="btn-recall form-button" id="doask" type="submit">Заказать звонок</button>
+		</form>
+
+
+
+		<p class="modal-window__text">Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных в
+			соответствии с</p>
+		<p class="modal-window__text modal-window-link">Политикой в области обработки и защиты и персональных данных</p>
+
+	</div>
+	<div class="wrap" data-pref="#">
+		<div id="main">
+			<div id="block1">
+				<div class="centered">
+					<div id="block1_top" class="tbl">
+						<div>
+							<a href="https://respilon.ru" target="_blank" rel="nofollow">
+								<img src="img/logo.svg">
+							</a>
+						</div>
+						<div class="right-side">
+							<div class="right-side_block">
+								<div>
+									<a href="#" target="_blank" rel="nofollow">
+										<div class="bg second-header-logo">
+											<!-- логотип, размер 210px x 120px  -->
+											<img src="img/logo2.png" />
+										</div>
+									</a>
+								</div>
+								<div class="right-side_block-left">
+									<div class="right-side_text">
+										<p>Официальный дилер в Санкт-Петербурге
+											<!-- название города -->
+										</p>
+										<p><a href="tel:+78126027523">+7 (812) 602-75-23
+												<!-- телефон --></a></p>
+									</div>
+									<div class="header-btn">
+										<div class="align_center">
+											<div class="align_center_to_left">
+												<div class="align_center_to_right">
+													<button class="btn box_shadow btn-in-header" id="js-recall">Обратный
+														звонок</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- Конец зоны размещения информации о партнере -->
+					</div>
+					<div id="block1_content" class="tbl">
+						<div>
+							<div class="txt">
+								<h1>Оконная мембрана из нановолокна</h1>
+								<p>предотвращает проникновение в помещение вредных частиц: пыли, пыльцы, смога,
+									выхлопных газов, аллергенов, вирусов, грибковых и плесневых спор</p>
+							</div>
+							<div class="tbl" id="block1_content__tbl">
+								<div>
+									<button class="btn box_shadow modal_video" data-tp="presentation">Узнайте больше о
+										защите<br />здоровья за 2 минуты</button>
+								</div>
+								<div>
+									<div class="txt">
+										<p><a target="_blank" href="files/RESPILON_AIR_инструкция.pdf">Инструкция по
+												применению</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="img/window.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="block2">
+				<div class="centered">
+					<div class="flex">
+						<div>
+							<div class="tbl block2_el">
+								<div>
+									<div class="block2_el__pic">
+										<div class="bg">
+											<img src="img/why1.png" />
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="txt">
+										<h3>Избавление от аллергии</h3>
+										<p>Нановолоконная мембрана блокирует большинство аллергенных частиц и
+											возбудителей, чтобы вы чувствовали себя комфортно даже в период цветения</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="tbl block2_el">
+								<div>
+									<div class="block2_el__pic">
+										<div class="bg">
+											<img src="img/why2.png" />
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="txt">
+										<h3>Безопасная среда</h3>
+										<p>Создайте комфортное пространство для счастливой жизни, избавив себя и близких
+											от запаха смога, выхлопных газов и табачного дыма.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="tbl block2_el">
+								<div>
+									<div class="block2_el__pic">
+										<div class="bg">
+											<img src="img/why3.png" />
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="txt">
+										<h3>Чистота в доме</h3>
+										<p>Победите вирусы и бактерии с улицы, снизьте уровень загрязнения в квартире
+											или доме без постоянной необходимости вытирать пыль и грязь</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="tbl block2_el">
+								<div>
+									<div class="block2_el__pic">
+										<div class="bg">
+											<img src="img/why4.png" />
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="txt">
+										<h3>Защита без сложностей</h3>
+										<p>Сетка «Чистый воздух» легко устанавливается вместо москитной сетки, очищается
+											водой и может использоваться круглый год</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="block3">
+				<div class="centered">
+					<div class="txt">
+						<h2>Доступная инновация с уникальными фильтрующими свойствами</h2>
+					</div>
+					<div class="tbl" id="block3_info">
+						<div>
+							<div class="txt">
+								<p>Результат многолетних исследований Европейских ученых, механический барьер с
+									исключительными возможностями фильтрации воздуха, поступающего в помещения через
+									окна.</p>
+							</div>
+							<div class="flex">
+								<div>
+									<div>
+										<p>3 года</p>
+										<p>срок службы сетки из нановолокна RespilonAir</p>
+									</div>
+								</div>
+								<div>
+									<div>
+										<p> 97,6%</p>
+										<p>фильтрация частиц размером 2,5 нанометра = диаметру частицы смога</p>
+									</div>
+								</div>
+								<div>
+									<div>
+										<p>0.0005 мм</p>
+										<p>расстояние между нановолокнами фильтрующей мембраны</p>
+									</div>
+								</div>
+								<div>
+									<div>
+										<p>в 1 000 раз</p>
+										<p>нановолокно в основе мембраны тоньше человеческого волоса</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="img/inner_img6.png" />
+							<div class="align_center">
+								<div class="align_center_to_left">
+									<div class="align_center_to_right">
+										<button class="btn box_shadow modal_video" data-tp="technology">Увидеть
+											производство<br />нановолокна для мембран</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="block4">
+				<div class="centered">
+					<div class="txt">
+						<h2>Как работает мембрана RESPILON AIR®?</h2>
+					</div>
+					<a href="img/schema.png" class="lbox" id="block4_img">
+						<img src="img/schema.png" />
+						<p>Благодаря равномерному напылению нановолокон на воздухопроницаемую основу, происходит
+							естественное физическое улавливание микрочастиц различных загрязнений. Так как нановолокна
+							настолько малы, что не видны человеческому глазу, мембрана пропускает свет и кажется
+							прозрачной.</p>
+					</a>
+				</div>
+			</div>
+			<div id="block5">
+				<div class="centered">
+					<div class="txt">
+						<h2>От чего защищает сетка-фильтр «Чистый воздух»?</h2>
+					</div>
+					<div id="block5_info" class="tbl">
+						<div>
+							<a href="img/inner_img7_2.jpg" class="lbox">
+								<img src="img/inner_img7_2.jpg" />
+							</a>
+						</div>
+						<div>
+							<div class="txt">
+								<p style="text-align: center;"><img src="img/Respilon_AIR_logo.png" /></p>
+								<p style="margin-top: 0px;">RESPILON AIR® - первая в мире мембрана для окон, способная
+									защитить дом от смога и других загрязнений воздуха. </p>
+								<p>В то время как обычные москитные сетки пропускают в помещение твердые частицы, а
+									сетки против пыльцы могут задержать небольшое количество более крупных пыльцевых
+									зерен, нановолоконная мембрана может остановить и гораздо меньшие частицы, а так же
+									множество других типов загрязнений.</p>
+								<p style="color: #2A98C5;">Мембрана из нановолокна для защиты дома от загрязнений – это
+									будущее, доступное уже сейчас!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="block6">
+				<div class="centered">
+					<div id="block6_info" class="tbl">
+						<div>
+							<div class="txt">
+								<h2>Запатентованная технология исключительного качества, подтвержденного в лаборатории
+								</h2>
+								<p>Результаты независимого тестирования в лаборатории Engineering Test Institute Public
+									Enterprise, Hudcova424/56b, 621 00 Brno, Czech Republic от 05.12.16 г</p>
+							</div>
+							<div id="block6_info__tbl">
+								<table cellpadding="0" cellspacing="0" class="no_select">
+									<tr class="top">
+										<td>Эффективность фильтрации</td>
+										<td>Обычный фильтр против пыльцы</td>
+										<td>Премиальный фильтр против пыльцы</td>
+										<td>Сетка-фильтр ЧИСТЫЙ ВОЗДУХ</td>
+									</tr>
+									<tr>
+										<td>частицы размером 1,0 микрон (мкм)</td>
+										<td>20,3%</td>
+										<td>21,7%</td>
+										<td><b>82,9%</b></td>
+									</tr>
+									<tr>
+										<td>частицы размером 2,5 микрон (мкм)</td>
+										<td>23,0%</td>
+										<td>28,6%</td>
+										<td><b>97,6%</b></td>
+									</tr>
+									<tr>
+										<td>частицы размером 5,0 микрон (мкм)</td>
+										<td>31,9%</td>
+										<td>39,8%</td>
+										<td><b>100%</b></td>
+									</tr>
+								</table>
+							</div>
+							<div class="tbl" id="block6_info__tbl2">
+								<div>
+									<p>1,0 мкм = <b>PM1,0</b> - частицы выхлопных газов</p>
+									<p>2,5 мкм = PM2,5 - частицы смога</p>
+								</div>
+								<div>
+									<img src="img/image2.png" />
+								</div>
+							</div>
+							<p>Измерения производились при постоянном потоке воздуха 1,2 л/мин. Воздух содержал частицы,
+								выделяемые при горении сигаретного табака. Время наблюдения – 5 мин на сторонах входа и
+								выхода.</p>
+						</div>
+						<div>
+							<div class="box_shadow">
+								<p>Премиальный хай-тек продукт с функцией фильтрации уличного воздуха</p>
+								<p>Эффективно фильтрует даже самые мелкие частицы пыли и смога</p>
+								<p>Высокая устойчивость, вызванная прочной структурой нановолокна</p>
+								<p>Благодаря применяемым полимерам, из мембраны не высвобождаются никакие вредные
+									субстанции</p>
+								<p>Не пропускает УФ-составляющую светового спектра и задерживает жидкость</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="block7">
+				<div class="centered">
+					<div class="txt">
+						<h2>Тестирование фильтрующей мембраны для окон из<br />нановолокна «Чистый воздух»</h2>
+					</div>
+					<div id="rotator">
+						<div class="slick">
+							<!-- Элемент галереи для добавления своих видеороликов:
+
+							<div>
+			          <div class="video_el">
+			            <div class="thumb-wrap">
+			              Embed-код видео из видеосервиса (youtube, vimeo и т.д.)
+			            </div>
+			          </div>
+			        </div>
+							
+							-->
+							<div>
+								<div class="video_el">
+									<div class="thumb-wrap">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/LNYeap8CZPQ"
+											frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="video_el">
+									<div class="thumb-wrap">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/rN01LVfBYNA"
+											frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="video_el">
+									<div class="thumb-wrap">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/O1omV_2PilM"
+											frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="video_el">
+									<div class="thumb-wrap">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/AwUYOJ1F3-A"
+											frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="slick-btn slick-prev"><img src="img/arr1.svg" /></button>
+				<button class="slick-btn slick-next"><img src="img/arr2.svg" /></button>
+			</div>
+			<div id="block8">
+				<div class="centered">
+					<div id="block8_info" class="tbl">
+						<div>
+							<div class="txt">
+								<h2>Самостоятельная установка в рамку от москитной сетки</h2>
+								<p>Вы можете самостоятельно установить нашу мембрану вместо москитной сетки. Но если вы
+									хотите иметь надежную и качественную рамку, рекомендуем вам обратиться за услугами к
+									специализированной сервисной компании в вашем регионе:</p>
+							</div>
+							<div class="tbl" id="block8_info__partner">
+								<!-- Зона размещения информации о партнере -->
+								<div>
+									<a href="#" target="_blank" rel="nofollow">
+										<div class="bg">
+											<!-- логотип, размер 140px x 80px  -->
+											<img src="img/logo2.png" />
+										</div>
+									</a>
+								</div>
+								<div>
+									<p>Официальный дилер в Санкт-Петербурге
+										<!-- название города -->
+									</p>
+									<p><a href="tel:+78126027523">+7 (812) 602-75-23
+											<!-- телефон --></a></p>
+								</div>
+								<!-- Конец зоны размещения информации о партнере -->
+							</div>
+							<div class="tbl" id="block8_info__tbl">
+								<div>
+									<button class="btn box_shadow modal_video" data-tp="install">Смотреть
+										видеоинструкцию<br />по самостоятельной установке</button>
+								</div>
+								<div>
+									<div class="txt">
+										<p><a href="files/RESPILON_AIR_инструкция_по_установке_мембраны.pdf">Инструкция
+												по установке</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div id="block8_slider">
+								<div id="block8_slider__body">
+									<div class="block8_slider__body__el no_select block8_slider__body__el--active"
+										id="step1" style="opacity: 1">
+										<a href="img/step1.png" class="lbox">
+											<img src="img/step1.png" />
+										</a>
+										<p><b>Шаг 1 из 8:</b> уберите старый уплотнитель с рамы</p>
+									</div>
+									<div class="block8_slider__body__el no_select" id="step2">
+										<a href="img/step2.png" class="lbox">
+											<img src="img/step2.png" />
+										</a>
+										<p><b>Шаг 2 из 8:</b> снимите старую сетку с рамы</p>
+									</div>
+									<div class="block8_slider__body__el no_select" id="step3">
+										<a href="img/step3.png" class="lbox">
+											<img src="img/step3.png" />
+										</a>
+										<p><b>Шаг 3 из 8:</b> приложите старую сетку к мембране и сделайте 4 отметки на
+											расстоянии ~5 см от каждого угла сетки</p>
+									</div>
+									<div class="block8_slider__body__el no_select" id="step4">
+										<a href="img/step4.png" class="lbox">
+											<img src="img/step4.png" />
+										</a>
+										<p><b>Шаг 4 из 8:</b> соедените отметки для того, чтобы сделать контур мембраны
+											для рамы</p>
+									</div>
+									<div class="block8_slider__body__el no_select" id="step5">
+										<a href="img/step5.png" class="lbox">
+											<img src="img/step5.png" />
+										</a>
+										<p><b>Шаг 5 из 8:</b> используйте контур чтобы сделать новую оконную сетку</p>
+									</div>
+									<div class="block8_slider__body__el no_select" id="step6">
+										<a href="img/step6.png" class="lbox">
+											<img src="img/step6.png" />
+										</a>
+										<p><b>Шаг 6 из 8:</b> поместите мембрану на раму и подготовьте уплотнитель</p>
+									</div>
+									<div class="block8_slider__body__el no_select" id="step7">
+										<a href="img/step7.png" class="lbox">
+											<img src="img/step7.png" />
+										</a>
+										<p><b>Шаг 7 из 8:</b> вставьте мембрану в раму, затем отрежьте лишнюю мембрану
+										</p>
+									</div>
+									<div class="block8_slider__body__el no_select" id="step8">
+										<a href="img/step8.png" class="lbox">
+											<img src="img/step8.png" />
+										</a>
+										<p><b>Шаг 8 из 8:</b> вставьте раму обратно в оконный или дверной проем</p>
+									</div>
+								</div>
+								<div class="align_center">
+									<div class="align_center_to_left">
+										<div class="align_center_to_right">
+											<ul id="block8_slider__nav" class="clearfix">
+												<li data-id="step1" class="block8_slider__nav--active"></li>
+												<li data-id="step2"></li>
+												<li data-id="step3"></li>
+												<li data-id="step4"></li>
+												<li data-id="step5"></li>
+												<li data-id="step6"></li>
+												<li data-id="step7"></li>
+												<li data-id="step8"></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="block9">
+				<div class="centered">
+					<div class="txt">
+						<h2>Примеры установки оконной мембраны</h2>
+					</div>
+					<div class="clearfix">
+						<!-- Элемент галереи для добавления своих фотографий:
+
+						<a href="путь до фотографии" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="путь до фотографии" />
+							</div>
+						</a>
+						
+						-->
+						<a href="foto/foto_13_05282015098478.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/foto_13_05282015098478.jpg" />
+							</div>
+						</a>
+						<a href="foto/foto_13_05282015109086.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/foto_13_05282015109086.jpg" />
+							</div>
+						</a>
+						<a href="foto/foto_13_05282015109159.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/foto_13_05282015109159.jpg" />
+							</div>
+						</a>
+						<a href="foto/foto_13_05282015121968.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/foto_13_05282015121968.jpg" />
+							</div>
+						</a>
+						<a href="foto/foto_13_05282015129233.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/foto_13_05282015129233.jpg" />
+							</div>
+						</a>
+						<a href="foto/r_foto_13_05271913316745.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/r_foto_13_05271913316745.jpg" />
+							</div>
+						</a>
+						<a href="foto/r_foto_13_05271913321773.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/r_foto_13_05271913321773.jpg" />
+							</div>
+						</a>
+						<a href="foto/r_foto_13_05271913516850.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/r_foto_13_05271913516850.jpg" />
+							</div>
+						</a>
+						<a href="foto/r_foto_13_05282015106002.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/r_foto_13_05282015106002.jpg" />
+							</div>
+						</a>
+						<a href="foto/r_foto_13_05282015109946.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/r_foto_13_05282015109946.jpg" />
+							</div>
+						</a>
+						<a href="foto/r_foto_13_05282015118390.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/r_foto_13_05282015118390.jpg" />
+							</div>
+						</a>
+						<a href="foto/r_foto_13_07191420469398.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/r_foto_13_07191420469398.jpg" />
+							</div>
+						</a>
+						<a href="foto/r_foto_13_07191420515698.jpg" class="lbox block9_el" rel="gallery">
+							<div class="bg">
+								<img src="foto/r_foto_13_07191420515698.jpg" />
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="centered">
+			<div class="tbl" id="footer_body">
+				<div>
+					<img src="img/logo.svg" />
+					<div class="txt">
+						<p>Представительство в России</p>
+						<p><b>+7 (499) 638 27 77</b></p>
+						<p><a href="mailto:info@respilonair.ru" target="_blank">info@respilon.ru</a></p>
+					</div>
+				</div>
+				<div>
+					<div class="align_center">
+						<div class="align_center_to_left">
+							<div class="align_center_to_right">
+								<button class="btn box_shadow" id="js-recall-footer">Заказать мембрану<br />из
+									нановолокна</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Зона размещения информации о партнере -->
+				<div>
+					<a href="#" target="_blank" rel="nofollow">
+						<div class="bg">
+							<!-- логотип, размер 140px x 80px  -->
+							<img src="img/logo2.png" />
+						</div>
+					</a>
+				</div>
+				<div>
+					<p>Официальный дилер в Санкт-Петербурге
+						<!-- название города -->
+					</p>
+					<p><a href="tel:+78126027523" class="bottom_link">+7 (812) 602-75-23
+							<!-- телефон --></a></p>
+				</div>
+
+				<!-- Конец зоны размещения информации о партнере -->
+			</div>
+			<div class="txt" id="footer_bottom">
+				<p>© RESPILON Ltd. 2015 - 2019 | <a href="policy.html" target="_blank">Политика обработки персональных данных</a> | <a href="return.html" target="_blank">Условия обмена и возврата</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+	<div id="mdl"></div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/fancybox.css">
+	<script type="text/javascript" src="js/fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+	<script type="text/javascript" src="js/slick/slick.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/script-mail.js"></script>
+	<script src="jquery.maskedinput.js"></script>
+</body>
+
+</html>

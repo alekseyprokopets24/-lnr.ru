@@ -1,0 +1,46 @@
+.thanks-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.title__level-one{
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #2960af!important;
+    line-height: 1.3em;
+    text-align: center;
+
+
+}
+
+.title__level-two{
+
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #333333!important;
+    line-height: 1.3em;
+    text-align: center;
+
+}
+
+.title__level-three{
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 36px;
+    color: #494949!important;
+    line-height: 1.3em;
+    text-align: center;
+}
+
